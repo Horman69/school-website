@@ -1,0 +1,13 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://school1.example.ru/sitemap.xml
+
+# Disallow admin areas (if any in future)
+# Disallow: /admin/
+
+# Allow all educational content
+Allow: /sveden/
+Allow: /accessible/
