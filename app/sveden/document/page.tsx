@@ -87,7 +87,7 @@ export default function DocumentPage() {
                                     <div key={idx} className={`pb-4 last:border-0 last:pb-0 border-b ${getBorderClasses()}`}>
                                         <h3 className={`text-sm font-semibold mb-2 ${getSubtitleClasses()}`}>{doc.title}</h3>
                                         <DocumentLink
-                                            href={doc.link}
+                                            href={doc.link || '#'}
                                             itemprop={doc.itemprop}
                                             hasSignature={doc.hasSignature}
                                         >
