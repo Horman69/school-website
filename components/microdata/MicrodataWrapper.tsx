@@ -1,12 +1,12 @@
 import React from 'react';
 
 interface MicrodataWrapperProps {
-    tag?: keyof JSX.IntrinsicElements;
+    tag?: React.ElementType;
     itemprop?: string;
     itemscope?: boolean;
     itemtype?: string;
-    className?: string;
     children: React.ReactNode;
+    className?: string;
 }
 
 /**
