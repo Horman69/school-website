@@ -10,9 +10,9 @@ export function Footer() {
                     <div>
                         <h3 className="text-white font-bold mb-4">Контакты</h3>
                         <div className="space-y-2 text-sm">
-                            <p>г. Москва, ул. Ленина, д. 1</p>
-                            <p>Тел: +7 (495) 123-45-67</p>
-                            <p>Email: school1@example.ru</p>
+                            <p>г. Нячанг, Вьетнам</p>
+                            <p>Тел: Уточняется</p>
+                            <p>Telegram: @Educampvietnam</p>
                         </div>
                     </div>
 
@@ -36,11 +36,11 @@ export function Footer() {
                     <div>
                         <h3 className="text-white font-bold mb-4">Информация</h3>
                         <div className="space-y-2 text-sm">
-                            <p>© 2024 МБОУ "СОШ №1"</p>
+                            <p>© 2024 Edu Camp</p>
                             <p className="text-xs text-gray-500">
-                                Сайт соответствует требованиям<br />
-                                Приказа Рособрнадзора №1493<br />
-                                от 04.08.2023
+                                Российское образование<br />
+                                во Вьетнаме<br />
+                                г. Нячанг
                             </p>
                         </div>
                     </div>
