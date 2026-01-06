@@ -36,7 +36,7 @@ export function Footer() {
                     <div>
                         <h3 className="text-white font-bold mb-4">Информация</h3>
                         <div className="space-y-2 text-sm">
-                            <p>© 2024 Edu Camp</p>
+                            <p>© 2024 EduCamp</p>
                             <p className="text-xs text-gray-500">
                                 Российское образование<br />
                                 во Вьетнаме<br />

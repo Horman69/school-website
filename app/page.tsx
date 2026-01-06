@@ -205,7 +205,7 @@ export default function Home() {
 
               {/* Main Title */}
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-                <span className="block">Edu Camp</span>
+                <span className="block">EduCamp</span>
               </h1>
 
               {/* Subtitle */}
