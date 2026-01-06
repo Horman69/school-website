@@ -15,7 +15,7 @@ export function Header() {
                             Ш
                         </div>
                         <div className="hidden sm:block">
-                            <div className="font-bold text-gray-900">МБОУ "СОШ №1"</div>
+                            <div className="font-bold text-gray-900">Edu Camp</div>
                             <div className="text-xs text-gray-700">Официальный сайт</div>
                         </div>
                     </Link>
