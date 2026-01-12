@@ -10,8 +10,8 @@ export default function AccessibleVersion() {
 
     const getButtonClasses = (isActive: boolean) => {
         return `px-6 py-3 rounded-lg font-bold transition-all border-2 ${isActive
-                ? 'bg-primary-600 text-white border-primary-600 ring-2 ring-primary-300'
-                : 'bg-gray-100 text-gray-900 border-gray-300 hover:bg-gray-200'
+            ? 'bg-primary-600 text-white border-primary-600 ring-2 ring-primary-300'
+            : 'bg-gray-100 text-gray-900 border-gray-300 hover:bg-gray-200'
             }`;
     };
 
@@ -53,19 +53,6 @@ export default function AccessibleVersion() {
             return 'bg-blue-800 border-yellow-600 text-yellow-300';
         }
         return 'bg-blue-50 border-blue-200 text-gray-900';
-    };
-
-    const getTestCardClasses = () => {
-        if (colorScheme === 'black') {
-            return 'bg-gray-800 border-gray-600 text-white';
-        }
-        if (colorScheme === 'white') {
-            return 'bg-white border-black text-black';
-        }
-        if (colorScheme === 'blue') {
-            return 'bg-blue-800 border-yellow-600 text-yellow-300';
-        }
-        return 'bg-green-50 border-green-200 text-gray-900';
     };
 
     return (
@@ -159,20 +146,6 @@ export default function AccessibleVersion() {
                         </Link>
                     </div>
 
-                    {/* Test Instructions */}
-                    <div className={`${getTestCardClasses()} border-2 rounded-xl p-6`}>
-                        <h2 className="text-2xl font-bold mb-4">
-                            🧪 Тестирование
-                        </h2>
-                        <ol className="list-decimal list-inside space-y-2">
-                            <li><strong>Черная:</strong> Черный фон, белый текст</li>
-                            <li><strong>Белая:</strong> Белый фон, черный текст, черные границы</li>
-                            <li><strong>Синяя:</strong> Темно-синий фон, желтый текст</li>
-                            <li>Нажмите "Вернуться к главной странице"</li>
-                            <li>Проверьте, что главная страница тоже изменилась</li>
-                            <li>Вернитесь сюда и выберите "Обычная" для сброса</li>
-                        </ol>
-                    </div>
                 </div>
             </PageContainer>
         </div>
