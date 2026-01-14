@@ -4,60 +4,7 @@ import { PageContainer } from '@/components/layout/PageContainer';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
 import { DocumentLink } from '@/components/ui/DocumentLink';
-import type { EducationProgram } from '@/lib/microdata/types';
 import { useAccessibility } from '@/contexts/AccessibilityContext';
-
-// Данные образовательных программ (ЗАПОЛНИТЕ РЕАЛЬНЫМИ ДАННЫМИ)
-const educationPrograms: EducationProgram[] = [
-    {
-        eduCode: '',
-        eduName: 'Начальное общее образование',
-        eduLevel: 'Начальное общее образование',
-        eduForm: 'Очная',
-        learningTerm: '4 года',
-        opMain: '/documents/edu/nachalnoe-opisanie.pdf',
-        educationPlan: '/documents/edu/nachalnoe-plan.pdf',
-        educationRpd: ['/documents/edu/rpd-1.pdf', '/documents/edu/rpd-2.pdf'],
-        educationShedule: '/documents/edu/nachalnoe-grafik.pdf',
-        numberAll: 250,
-        numberBF: 0,
-        numberBR: 0,
-        numberBM: 250,
-        numberP: 0,
-    },
-    {
-        eduCode: '',
-        eduName: 'Основное общее образование',
-        eduLevel: 'Основное общее образование',
-        eduForm: 'Очная',
-        learningTerm: '5 лет',
-        opMain: '/documents/edu/osnovnoe-opisanie.pdf',
-        educationPlan: '/documents/edu/osnovnoe-plan.pdf',
-        educationRpd: ['/documents/edu/rpd-3.pdf', '/documents/edu/rpd-4.pdf'],
-        educationShedule: '/documents/edu/osnovnoe-grafik.pdf',
-        numberAll: 300,
-        numberBF: 0,
-        numberBR: 0,
-        numberBM: 300,
-        numberP: 0,
-    },
-    {
-        eduCode: '',
-        eduName: 'Среднее общее образование',
-        eduLevel: 'Среднее общее образование',
-        eduForm: 'Очная',
-        learningTerm: '2 года',
-        opMain: '/documents/edu/srednee-opisanie.pdf',
-        educationPlan: '/documents/edu/srednee-plan.pdf',
-        educationRpd: ['/documents/edu/rpd-5.pdf', '/documents/edu/rpd-6.pdf'],
-        educationShedule: '/documents/edu/srednee-grafik.pdf',
-        numberAll: 100,
-        numberBF: 0,
-        numberBR: 0,
-        numberBM: 100,
-        numberP: 0,
-    },
-];
 
 export default function EducationPage() {
     const { colorScheme } = useAccessibility();
@@ -76,41 +23,6 @@ export default function EducationPage() {
         return 'text-gray-900';
     };
 
-    const getLabelClasses = () => {
-        if (colorScheme === 'black') return 'text-gray-400';
-        if (colorScheme === 'white') return 'text-gray-700';
-        if (colorScheme === 'blue') return 'text-yellow-400';
-        return 'text-gray-800';
-    };
-
-    const getValueClasses = () => {
-        if (colorScheme === 'black') return 'text-white';
-        if (colorScheme === 'white') return 'text-black';
-        if (colorScheme === 'blue') return 'text-yellow-100';
-        return 'text-gray-900';
-    };
-
-    const getBorderClasses = () => {
-        if (colorScheme === 'black') return 'border-gray-700';
-        if (colorScheme === 'white') return 'border-gray-300';
-        if (colorScheme === 'blue') return 'border-blue-600';
-        return 'border-gray-100';
-    };
-
-    const getStatBoxClasses = () => {
-        if (colorScheme === 'black') return 'bg-gray-800';
-        if (colorScheme === 'white') return 'bg-gray-100';
-        if (colorScheme === 'blue') return 'bg-blue-800';
-        return 'bg-gray-50';
-    };
-
-    const getStatNumberClasses = () => {
-        if (colorScheme === 'black') return 'text-white';
-        if (colorScheme === 'white') return 'text-black';
-        if (colorScheme === 'blue') return 'text-yellow-200';
-        return 'text-primary-600';
-    };
-
     return (
         <div className={getPageClasses()}>
             <PageContainer>
@@ -122,85 +34,220 @@ export default function EducationPage() {
 
                     <h1 className={`text-4xl font-bold mb-8 ${getTitleClasses()}`}>Образование</h1>
 
-                    {/* Программы */}
-                    <div className="space-y-6 mb-6">
-                        {educationPrograms.map((program, idx) => (
-                            <Card key={idx} itemProp="eduOp">
-                                <CardHeader>
-                                    <CardTitle itemProp="eduName">{program.eduName}</CardTitle>
-                                </CardHeader>
-                                <CardContent>
-                                    {/* Основная информация */}
-                                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-                                        <div>
-                                            <div className={`text-sm font-semibold mb-1 ${getLabelClasses()}`}>Уровень образования</div>
-                                            <div itemProp="eduLevel" className={getValueClasses()}>{program.eduLevel}</div>
-                                        </div>
-                                        <div>
-                                            <div className={`text-sm font-semibold mb-1 ${getLabelClasses()}`}>Форма обучения</div>
-                                            <div itemProp="eduForm" className={getValueClasses()}>{program.eduForm}</div>
-                                        </div>
-                                        <div>
-                                            <div className={`text-sm font-semibold mb-1 ${getLabelClasses()}`}>Срок обучения</div>
-                                            <div itemProp="learningTerm" className={getValueClasses()}>{program.learningTerm}</div>
-                                        </div>
+                    {/* Начальное общее образование (НОО) */}
+                    <Card className="mb-6">
+                        <CardHeader>
+                            <CardTitle>Начальное общее образование (НОО)</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <div className="space-y-6">
+                                {/* Основная информация */}
+                                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                    <div>
+                                        <div className="text-sm font-semibold mb-1 text-gray-600">Уровень образования</div>
+                                        <div className="font-medium">Начальное общее образование</div>
                                     </div>
+                                    <div>
+                                        <div className="text-sm font-semibold mb-1 text-gray-600">Форма обучения</div>
+                                        <div className="font-medium">Очная</div>
+                                    </div>
+                                    <div>
+                                        <div className="text-sm font-semibold mb-1 text-gray-600">Срок обучения</div>
+                                        <div className="font-medium">4 года</div>
+                                    </div>
+                                </div>
 
-                                    {/* Документы */}
-                                    <div className={`border-t pt-4 mb-6 ${getBorderClasses()}`}>
-                                        <h3 className={`font-semibold mb-3 ${getValueClasses()}`}>Документы программы</h3>
-                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                                            <DocumentLink href={program.opMain} itemprop="opMain" hasSignature>
-                                                Описание образовательной программы
-                                            </DocumentLink>
-                                            <DocumentLink href={program.educationPlan} itemprop="educationPlan" hasSignature>
-                                                Учебный план
-                                            </DocumentLink>
-                                            <DocumentLink href={program.educationShedule} itemprop="educationShedule" hasSignature>
-                                                Календарный учебный график
-                                            </DocumentLink>
-                                            <details className={colorScheme === 'blue' ? 'text-yellow-300' : 'text-primary-600'}>
-                                                <summary className={`cursor-pointer font-medium flex items-center gap-2 ${colorScheme === 'blue' ? 'hover:text-yellow-200' : 'hover:text-primary-700'}`}>
-                                                    <span className="text-xl">📄</span>
-                                                    Рабочие программы дисциплин ({program.educationRpd.length})
-                                                </summary>
-                                                <div className="ml-7 mt-2 space-y-2">
-                                                    {program.educationRpd.map((rpd, rpdIdx) => (
-                                                        <DocumentLink key={rpdIdx} href={rpd} itemprop="educationRpd" hasSignature>
-                                                            РПД {rpdIdx + 1}
-                                                        </DocumentLink>
-                                                    ))}
-                                                </div>
-                                            </details>
-                                        </div>
+                                {/* ФГОС НОО */}
+                                <div>
+                                    <h3 className="font-semibold mb-2">Федеральные государственные образовательные стандарты:</h3>
+                                    <div className="space-y-2">
+                                        <DocumentLink href="/documents/noo/prikaz-286-fgos-noo.pdf" itemprop="eduFedDoc">
+                                            Приказ №286 от 31.05.2021 ФГОС НОО
+                                        </DocumentLink>
+                                        <DocumentLink href="/documents/noo/prikaz-569-fgos-noo.pdf" itemprop="eduFedDoc">
+                                            Приказ №569 от 18.07.2022 об изменении ФГОС НОО
+                                        </DocumentLink>
+                                        <DocumentLink href="https://cloud.mail.ru/public/iS67/zV4vdMxjQ" itemprop="eduFedDoc">
+                                            Приказ №704 от 09.10.2024 о внесении изменений в ФОП
+                                        </DocumentLink>
                                     </div>
+                                </div>
 
-                                    {/* Численность */}
-                                    <div className={`border-t pt-4 ${getBorderClasses()}`}>
-                                        <h3 className={`font-semibold mb-3 ${getValueClasses()}`}>Численность обучающихся</h3>
-                                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                                            <div className={`rounded-lg p-3 ${getStatBoxClasses()}`}>
-                                                <div className={`text-xs mb-1 ${getLabelClasses()}`}>Всего</div>
-                                                <div itemProp="numberAll" className={`text-2xl font-bold ${getStatNumberClasses()}`}>{program.numberAll}</div>
-                                            </div>
-                                            <div className={`rounded-lg p-3 ${getStatBoxClasses()}`}>
-                                                <div className={`text-xs mb-1 ${getLabelClasses()}`}>Федеральный бюджет</div>
-                                                <div itemProp="numberBF" className={`text-2xl font-bold ${getValueClasses()}`}>{program.numberBF}</div>
-                                            </div>
-                                            <div className={`rounded-lg p-3 ${getStatBoxClasses()}`}>
-                                                <div className={`text-xs mb-1 ${getLabelClasses()}`}>Региональный бюджет</div>
-                                                <div itemProp="numberBR" className={`text-2xl font-bold ${getValueClasses()}`}>{program.numberBR}</div>
-                                            </div>
-                                            <div className={`rounded-lg p-3 ${getStatBoxClasses()}`}>
-                                                <div className={`text-xs mb-1 ${getLabelClasses()}`}>Местный бюджет</div>
-                                                <div itemProp="numberBM" className={`text-2xl font-bold ${getValueClasses()}`}>{program.numberBM}</div>
-                                            </div>
+                                {/* ООП НОО */}
+                                <div>
+                                    <h3 className="font-semibold mb-2">Основная образовательная программа:</h3>
+                                    <DocumentLink href="https://cloud.mail.ru/public/U71C/fYkAKSqDP" itemprop="eduOp">
+                                        Основная образовательная программа НОО
+                                    </DocumentLink>
+                                </div>
+
+                                {/* Учебный план */}
+                                <div>
+                                    <h3 className="font-semibold mb-2">Учебный план:</h3>
+                                    <DocumentLink href="/documents/noo/Учебный-план-НОО.docx" itemprop="educationPlan">
+                                        Учебный план НОО
+                                    </DocumentLink>
+                                </div>
+
+                                {/* Календарный график */}
+                                <div>
+                                    <h3 className="font-semibold mb-2">Календарный учебный график:</h3>
+                                    <DocumentLink href="/documents/noo/kalendarnyj-uchebnyj-grafik-noo.pdf" itemprop="educationShedule">
+                                        Календарный учебный график НОО
+                                    </DocumentLink>
+                                </div>
+
+                                {/* Рабочие программы */}
+                                <div>
+                                    <h3 className="font-semibold mb-2">Рабочие программы дисциплин:</h3>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                                        <DocumentLink href="/documents/noo/русский-язык.pdf" itemprop="educationRpd">Русский язык</DocumentLink>
+                                        <DocumentLink href="/documents/noo/литературное-чтение.pdf" itemprop="educationRpd">Литературное чтение</DocumentLink>
+                                        <DocumentLink href="/documents/noo/английский-язык.pdf" itemprop="educationRpd">Английский язык</DocumentLink>
+                                        <DocumentLink href="/documents/noo/математика.pdf" itemprop="educationRpd">Математика</DocumentLink>
+                                        <DocumentLink href="/documents/noo/окружающий-мир.pdf" itemprop="educationRpd">Окружающий мир</DocumentLink>
+                                        <DocumentLink href="/documents/noo/ОРКСЭ.pdf" itemprop="educationRpd">ОРКСЭ</DocumentLink>
+                                        <DocumentLink href="/documents/noo/ИЗО.pdf" itemprop="educationRpd">Изобразительное искусство</DocumentLink>
+                                        <DocumentLink href="/documents/noo/музыка.pdf" itemprop="educationRpd">Музыка</DocumentLink>
+                                        <DocumentLink href="/documents/noo/труд.pdf" itemprop="educationRpd">Технология</DocumentLink>
+                                        <DocumentLink href="/documents/noo/Физ-кул.pdf" itemprop="educationRpd">Физическая культура</DocumentLink>
+                                    </div>
+                                </div>
+
+                                {/* Численность */}
+                                <div>
+                                    <h3 className="font-semibold mb-3">Численность обучающихся</h3>
+                                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                        <div className="rounded-lg p-3 bg-gray-50">
+                                            <div className="text-xs mb-1 text-gray-600">Всего</div>
+                                            <div className="text-2xl font-bold text-primary-600" itemProp="numberAll">250</div>
+                                        </div>
+                                        <div className="rounded-lg p-3 bg-gray-50">
+                                            <div className="text-xs mb-1 text-gray-600">Федеральный бюджет</div>
+                                            <div className="text-2xl font-bold" itemProp="numberBF">0</div>
+                                        </div>
+                                        <div className="rounded-lg p-3 bg-gray-50">
+                                            <div className="text-xs mb-1 text-gray-600">Региональный бюджет</div>
+                                            <div className="text-2xl font-bold" itemProp="numberBR">0</div>
+                                        </div>
+                                        <div className="rounded-lg p-3 bg-gray-50">
+                                            <div className="text-xs mb-1 text-gray-600">Местный бюджет</div>
+                                            <div className="text-2xl font-bold" itemProp="numberBM">250</div>
                                         </div>
                                     </div>
-                                </CardContent>
-                            </Card>
-                        ))}
-                    </div>
+                                </div>
+                            </div>
+                        </CardContent>
+                    </Card>
+
+                    {/* Основное общее образование (ООО) */}
+                    <Card className="mb-6">
+                        <CardHeader>
+                            <CardTitle>Основное общее образование (ООО)</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <div className="space-y-6">
+                                {/* Основная информация */}
+                                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                    <div>
+                                        <div className="text-sm font-semibold mb-1 text-gray-600">Уровень образования</div>
+                                        <div className="font-medium">Основное общее образование</div>
+                                    </div>
+                                    <div>
+                                        <div className="text-sm font-semibold mb-1 text-gray-600">Форма обучения</div>
+                                        <div className="font-medium">Очная</div>
+                                    </div>
+                                    <div>
+                                        <div className="text-sm font-semibold mb-1 text-gray-600">Срок обучения</div>
+                                        <div className="font-medium">5 лет</div>
+                                    </div>
+                                </div>
+
+                                {/* ФГОС ООО */}
+                                <div>
+                                    <h3 className="font-semibold mb-2">Федеральные государственные образовательные стандарты:</h3>
+                                    <div className="space-y-2">
+                                        <DocumentLink href="/documents/ooo/prikaz-287-fgos-ooo.pdf" itemprop="eduFedDoc">
+                                            Приказ №287 от 31.05.2021 ФГОС ООО
+                                        </DocumentLink>
+                                        <DocumentLink href="/documents/ooo/prikaz-568-fgos-ooo.pdf" itemprop="eduFedDoc">
+                                            Приказ №568 от 18.07.2022 о изменении ФГОС ООО
+                                        </DocumentLink>
+                                        <DocumentLink href="https://cloud.mail.ru/public/iS67/zV4vdMxjQ" itemprop="eduFedDoc">
+                                            Приказ №704 от 09.10.2024 о внесении изменений в ФОП
+                                        </DocumentLink>
+                                    </div>
+                                </div>
+
+                                {/* ООП ООО */}
+                                <div>
+                                    <h3 className="font-semibold mb-2">Основная образовательная программа:</h3>
+                                    <DocumentLink href="https://cloud.mail.ru/public/U71C/fYkAKSqDP" itemprop="eduOp">
+                                        Основная образовательная программа ООО
+                                    </DocumentLink>
+                                </div>
+
+                                {/* Учебный план */}
+                                <div>
+                                    <h3 className="font-semibold mb-2">Учебный план:</h3>
+                                    <DocumentLink href="/documents/ooo/Учебный-план-ООО.docx" itemprop="educationPlan">
+                                        Учебный план ООО
+                                    </DocumentLink>
+                                </div>
+
+                                {/* Календарный график */}
+                                <div>
+                                    <h3 className="font-semibold mb-2">Календарный учебный график:</h3>
+                                    <DocumentLink href="/documents/ooo/Календарный-учебный-график-ООО.docx" itemprop="educationShedule">
+                                        Календарный учебный график ООО
+                                    </DocumentLink>
+                                </div>
+
+                                {/* Рабочие программы */}
+                                <div>
+                                    <h3 className="font-semibold mb-2">Рабочие программы дисциплин:</h3>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                                        <DocumentLink href="/documents/ooo/Русский-язык.pdf" itemprop="educationRpd">Русский язык</DocumentLink>
+                                        <DocumentLink href="/documents/ooo/Литература.pdf" itemprop="educationRpd">Литература</DocumentLink>
+                                        <DocumentLink href="/documents/ooo/Английский-язык.pdf" itemprop="educationRpd">Английский язык</DocumentLink>
+                                        <DocumentLink href="/documents/ooo/Математика.pdf" itemprop="educationRpd">Математика</DocumentLink>
+                                        <DocumentLink href="/documents/ooo/Информатика.pdf" itemprop="educationRpd">Информатика</DocumentLink>
+                                        <DocumentLink href="/documents/ooo/История.pdf" itemprop="educationRpd">История</DocumentLink>
+                                        <DocumentLink href="/documents/ooo/География.pdf" itemprop="educationRpd">География</DocumentLink>
+                                        <DocumentLink href="/documents/ooo/Биология.pdf" itemprop="educationRpd">Биология</DocumentLink>
+                                        <DocumentLink href="/documents/ooo/Физика.pdf" itemprop="educationRpd">Физика</DocumentLink>
+                                        <DocumentLink href="/documents/ooo/ИЗО.pdf" itemprop="educationRpd">Изобразительное искусство</DocumentLink>
+                                        <DocumentLink href="/documents/ooo/Музыка.pdf" itemprop="educationRpd">Музыка</DocumentLink>
+                                        <DocumentLink href="/documents/ooo/Труд.pdf" itemprop="educationRpd">Технология</DocumentLink>
+                                        <DocumentLink href="/documents/ooo/Физическая-культура.pdf" itemprop="educationRpd">Физическая культура</DocumentLink>
+                                    </div>
+                                </div>
+
+                                {/* Численность */}
+                                <div>
+                                    <h3 className="font-semibold mb-3">Численность обучающихся</h3>
+                                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                        <div className="rounded-lg p-3 bg-gray-50">
+                                            <div className="text-xs mb-1 text-gray-600">Всего</div>
+                                            <div className="text-2xl font-bold text-primary-600" itemProp="numberAll">300</div>
+                                        </div>
+                                        <div className="rounded-lg p-3 bg-gray-50">
+                                            <div className="text-xs mb-1 text-gray-600">Федеральный бюджет</div>
+                                            <div className="text-2xl font-bold" itemProp="numberBF">0</div>
+                                        </div>
+                                        <div className="rounded-lg p-3 bg-gray-50">
+                                            <div className="text-xs mb-1 text-gray-600">Региональный бюджет</div>
+                                            <div className="text-2xl font-bold" itemProp="numberBR">0</div>
+                                        </div>
+                                        <div className="rounded-lg p-3 bg-gray-50">
+                                            <div className="text-xs mb-1 text-gray-600">Местный бюджет</div>
+                                            <div className="text-2xl font-bold" itemProp="numberBM">300</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </CardContent>
+                    </Card>
 
                     {/* Языки обучения */}
                     <Card>
@@ -208,7 +255,7 @@ export default function EducationPage() {
                             <CardTitle>Языки, на которых осуществляется образование</CardTitle>
                         </CardHeader>
                         <CardContent>
-                            <p itemProp="language" className={`font-medium ${getValueClasses()}`}>Русский язык</p>
+                            <p itemProp="language" className="font-medium">Русский язык</p>
                         </CardContent>
                     </Card>
                 </div>

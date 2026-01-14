@@ -41,11 +41,11 @@ export default function EduStandartsPage() {
                         </CardHeader>
                         <CardContent>
                             <div className="space-y-3">
+                                <DocumentLink href="/documents/noo/prikaz-286-fgos-noo.pdf" itemprop="eduFedDoc">
+                                    Приказ №286 от 31.05.2021 ФГОС НОО
+                                </DocumentLink>
                                 <DocumentLink href="/documents/noo/prikaz-569-fgos-noo.pdf" itemprop="eduFedDoc">
                                     Приказ №569 от 18.07.2022 об изменении ФГОС НОО
-                                </DocumentLink>
-                                <DocumentLink href="https://fgos.ru/" itemprop="eduFedDoc">
-                                    ФГОС начального общего образования (официальный сайт)
                                 </DocumentLink>
                                 <DocumentLink href="https://cloud.mail.ru/public/iS67/zV4vdMxjQ" itemprop="eduFedDoc">
                                     Приказ №704 от 09.10.2024 о внесении изменений в ФОП НОО, ООО, СОО
@@ -61,25 +61,14 @@ export default function EduStandartsPage() {
                         </CardHeader>
                         <CardContent>
                             <div className="space-y-3">
-                                <DocumentLink href="https://fgos.ru/" itemprop="eduFedDoc">
-                                    ФГОС основного общего образования (официальный сайт)
+                                <DocumentLink href="/documents/ooo/prikaz-287-fgos-ooo.pdf" itemprop="eduFedDoc">
+                                    Приказ №287 от 31.05.2021 ФГОС ООО
+                                </DocumentLink>
+                                <DocumentLink href="/documents/ooo/prikaz-568-fgos-ooo.pdf" itemprop="eduFedDoc">
+                                    Приказ №568 от 18.07.2022 о изменении ФГОС ООО
                                 </DocumentLink>
                                 <DocumentLink href="https://cloud.mail.ru/public/iS67/zV4vdMxjQ" itemprop="eduFedDoc">
                                     Приказ №704 от 09.10.2024 о внесении изменений в ФОП НОО, ООО, СОО
-                                </DocumentLink>
-                            </div>
-                        </CardContent>
-                    </Card>
-
-                    {/* Среднее общее образование (СОО) */}
-                    <Card>
-                        <CardHeader>
-                            <CardTitle>Среднее общее образование (СОО)</CardTitle>
-                        </CardHeader>
-                        <CardContent>
-                            <div className="space-y-3">
-                                <DocumentLink href="https://fgos.ru/" itemprop="eduFedDoc">
-                                    ФГОС среднего общего образования (официальный сайт)
                                 </DocumentLink>
                             </div>
                         </CardContent>
