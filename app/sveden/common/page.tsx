@@ -9,28 +9,28 @@ import { MicrodataTable } from '@/components/microdata/MicrodataTable';
 import type { SchoolInfo, Uchreditel } from '@/lib/microdata/types';
 import { useAccessibility } from '@/contexts/AccessibilityContext';
 
-// Данные школы (ЗАПОЛНИТЕ РЕАЛЬНЫМИ ДАННЫМИ)
+// Данные школы (будут уточнены позже)
 const schoolData: SchoolInfo = {
-    fullName: 'Муниципальное бюджетное общеобразовательное учреждение "Средняя общеобразовательная школа №1"',
-    shortName: 'МБОУ "СОШ №1"',
-    regDate: '01.09.1990',
-    address: '123456, Россия, г. Москва, ул. Ленина, д. 1',
-    telephone: '+7 (495) 123-45-67',
-    email: 'school1@example.ru',
-    workTime: 'Пн-Пт: 8:00-18:00, Сб: 8:00-14:00',
+    fullName: 'Образовательная организация Educamp',
+    shortName: 'Educamp',
+    regDate: 'Уточняется',
+    address: 'Вьетнам, г. Нячанг (точный адрес уточняется)',
+    telephone: 'Уточняется',
+    email: 'Уточняется',
+    workTime: 'Пн-Пт: 8:00-17:00 (уточняется)',
 
     uchreditel: [
         {
-            nameUchred: 'Департамент образования города Москвы',
-            addressUchred: '123456, г. Москва, ул. Пушкина, д. 10',
-            telUchred: '+7 (495) 987-65-43',
-            mailUchred: 'depedu@moscow.ru',
-            websiteUchred: 'https://www.mos.ru/donm/',
+            nameUchred: 'Уточняется',
+            addressUchred: 'Уточняется',
+            telUchred: 'Уточняется',
+            mailUchred: 'Уточняется',
+            websiteUchred: '',
         },
     ],
 
-    licenseDocLink: '/documents/license.pdf',
-    accreditationDocLink: '/documents/accreditation.pdf',
+    licenseDocLink: '',
+    accreditationDocLink: '',
 };
 
 export default function CommonPage() {
