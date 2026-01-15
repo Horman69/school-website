@@ -114,28 +114,7 @@ export default function EducationPage() {
                                     </div>
                                 </div>
 
-                                {/* Численность */}
-                                <div>
-                                    <h3 className="font-semibold mb-3">Численность обучающихся</h3>
-                                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                                        <div className="rounded-lg p-3 bg-gray-50">
-                                            <div className="text-xs mb-1 text-gray-600">Всего</div>
-                                            <div className="text-2xl font-bold text-primary-600" itemProp="numberAll">250</div>
-                                        </div>
-                                        <div className="rounded-lg p-3 bg-gray-50">
-                                            <div className="text-xs mb-1 text-gray-600">Федеральный бюджет</div>
-                                            <div className="text-2xl font-bold" itemProp="numberBF">0</div>
-                                        </div>
-                                        <div className="rounded-lg p-3 bg-gray-50">
-                                            <div className="text-xs mb-1 text-gray-600">Региональный бюджет</div>
-                                            <div className="text-2xl font-bold" itemProp="numberBR">0</div>
-                                        </div>
-                                        <div className="rounded-lg p-3 bg-gray-50">
-                                            <div className="text-xs mb-1 text-gray-600">Местный бюджет</div>
-                                            <div className="text-2xl font-bold" itemProp="numberBM">250</div>
-                                        </div>
-                                    </div>
-                                </div>
+
                             </div>
                         </CardContent>
                     </Card>
@@ -223,28 +202,7 @@ export default function EducationPage() {
                                     </div>
                                 </div>
 
-                                {/* Численность */}
-                                <div>
-                                    <h3 className="font-semibold mb-3">Численность обучающихся</h3>
-                                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                                        <div className="rounded-lg p-3 bg-gray-50">
-                                            <div className="text-xs mb-1 text-gray-600">Всего</div>
-                                            <div className="text-2xl font-bold text-primary-600" itemProp="numberAll">300</div>
-                                        </div>
-                                        <div className="rounded-lg p-3 bg-gray-50">
-                                            <div className="text-xs mb-1 text-gray-600">Федеральный бюджет</div>
-                                            <div className="text-2xl font-bold" itemProp="numberBF">0</div>
-                                        </div>
-                                        <div className="rounded-lg p-3 bg-gray-50">
-                                            <div className="text-xs mb-1 text-gray-600">Региональный бюджет</div>
-                                            <div className="text-2xl font-bold" itemProp="numberBR">0</div>
-                                        </div>
-                                        <div className="rounded-lg p-3 bg-gray-50">
-                                            <div className="text-xs mb-1 text-gray-600">Местный бюджет</div>
-                                            <div className="text-2xl font-bold" itemProp="numberBM">300</div>
-                                        </div>
-                                    </div>
-                                </div>
+
                             </div>
                         </CardContent>
                     </Card>

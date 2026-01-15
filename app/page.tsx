@@ -251,29 +251,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Stats Section */}
-        <div className={`${getStatsClasses()} border-b shadow-sm`}>
-          <div className="container mx-auto px-4 py-12">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="text-center p-6 bg-gradient-to-br from-primary-50 to-primary-100 rounded-xl border border-primary-200">
-                <div className="text-5xl font-bold text-primary-700 mb-2">4-12</div>
-                <div className="text-sm font-semibold text-gray-900 uppercase tracking-wide">Возраст (лет)</div>
-              </div>
-              <div className="text-center p-6 bg-gradient-to-br from-primary-50 to-primary-100 rounded-xl border border-primary-200">
-                <div className="text-5xl font-bold text-primary-700 mb-2">15</div>
-                <div className="text-sm font-semibold text-gray-900 uppercase tracking-wide">Макс. в классе</div>
-              </div>
-              <div className="text-center p-6 bg-gradient-to-br from-primary-50 to-primary-100 rounded-xl border border-primary-200">
-                <div className="text-5xl font-bold text-primary-700 mb-2">3</div>
-                <div className="text-sm font-semibold text-gray-900 uppercase tracking-wide">Программы</div>
-              </div>
-              <div className="text-center p-6 bg-gradient-to-br from-primary-50 to-primary-100 rounded-xl border border-primary-200">
-                <div className="text-5xl font-bold text-primary-700 mb-2">3</div>
-                <div className="text-sm font-semibold text-gray-900 uppercase tracking-wide">Года во Вьетнаме</div>
-              </div>
-            </div>
-          </div>
-        </div>
+
 
         {/* Sections Grid */}
         <div id="sections" className="container mx-auto px-4 py-12 scroll-mt-20">
