@@ -31,9 +31,10 @@ export function generateSvedenMetadata(
             ],
         },
         twitter: {
-            card: 'summary',
+            card: 'summary_large_image',
             title: fullTitle,
             description,
+            images: [`${SITE_URL}/og-image.jpg`],
         },
         alternates: {
             canonical: url,
