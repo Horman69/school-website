@@ -3,10 +3,23 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://school1.example.ru/sitemap.xml
+Sitemap: https://educamp.site/sitemap.xml
 
-# Disallow admin areas (if any in future)
-# Disallow: /admin/
+# AI Crawlers (ChatGPT, Claude, Perplexity)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
 
 # Allow all educational content
 Allow: /sveden/
