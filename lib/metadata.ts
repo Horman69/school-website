@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 
-const SITE_URL = 'https://educamp.site';
+const SITE_URL = 'https://educampvietnam.ru';
 const SITE_NAME = 'EduCamp';
 
 export function generateSvedenMetadata(

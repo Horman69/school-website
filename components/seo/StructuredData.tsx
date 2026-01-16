@@ -6,8 +6,8 @@ export function OrganizationSchema() {
         "@type": "EducationalOrganization",
         "name": "EduCamp",
         "alternateName": "Едукамп",
-        "url": "https://educamp.site",
-        "logo": "https://educamp.site/logo.png",
+        "url": "https://educampvietnam.ru",
+        "logo": "https://educampvietnam.ru/logo.png",
         "description": "Российская школа и детский сад в Нячанге, Вьетнам. Образование для детей от 4 до 12 лет по российской программе.",
         "address": {
             "@type": "PostalAddress",
@@ -21,7 +21,7 @@ export function OrganizationSchema() {
             "latitude": "12.2388",
             "longitude": "109.1967"
         },
-        "email": "info@educamp.site",
+        "email": "info@educampvietnam.ru",
         "sameAs": [
             "https://t.me/educampvietnam"
         ],
@@ -42,14 +42,14 @@ export function WebSiteSchema() {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "EduCamp",
-        "url": "https://educamp.site",
+        "url": "https://educampvietnam.ru",
         "description": "Официальный сайт образовательной организации EduCamp - школа и детский сад в Нячанге, Вьетнам",
         "inLanguage": "ru",
         "potentialAction": {
             "@type": "SearchAction",
             "target": {
                 "@type": "EntryPoint",
-                "urlTemplate": "https://educamp.site/?q={search_term_string}"
+                "urlTemplate": "https://educampvietnam.ru/?q={search_term_string}"
             },
             "query-input": "required name=search_term_string"
         }
@@ -76,7 +76,7 @@ export function BreadcrumbSchema({ items }: { items: BreadcrumbItem[] }) {
             "@type": "ListItem",
             "position": index + 1,
             "name": item.name,
-            "item": `https://educamp.site${item.url}`
+            "item": `https://educampvietnam.ru${item.url}`
         }))
     };
 

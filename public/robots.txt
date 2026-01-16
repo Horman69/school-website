@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://educamp.site/sitemap.xml
+Sitemap: https://educampvietnam.ru/sitemap.xml
 
 # AI Crawlers (ChatGPT, Claude, Perplexity)
 User-agent: GPTBot

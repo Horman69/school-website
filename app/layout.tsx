@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://educamp.site'),
+  metadataBase: new URL('https://educampvietnam.ru'),
   title: {
     default: 'EduCamp - Российская школа и детский сад в Нячанге, Вьетнам',
     template: '%s | EduCamp'
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'ru_RU',
-    url: 'https://educamp.site',
+    url: 'https://educampvietnam.ru',
     siteName: 'EduCamp',
     title: 'EduCamp - Российская школа в Нячанге',
     description: 'Школа и детский сад по российской программе во Вьетнаме. Образование для детей 4-12 лет',
