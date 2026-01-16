@@ -23,7 +23,7 @@ export function generateSvedenMetadata(
             type: 'website',
             images: [
                 {
-                    url: `${SITE_URL}/og-image.jpg`,
+                    url: `${SITE_URL}/og.jpg`,
                     width: 1200,
                     height: 630,
                     alt: fullTitle,

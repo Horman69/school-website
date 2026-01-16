@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     description: 'Школа и детский сад по российской программе во Вьетнаме. Образование для детей 4-12 лет',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/og.jpg',
         width: 1200,
         height: 630,
         alt: 'EduCamp - Российская школа и детский сад в Нячанге',
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'EduCamp - Российская школа в Нячанге',
     description: 'Школа и детский сад по российской программе во Вьетнаме',
-    images: ['/og-image.jpg'],
+    images: ['/og.jpg'],
   },
   robots: {
     index: true,
