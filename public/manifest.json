@@ -1,0 +1,22 @@
+{
+  "name": "EduCamp - Российская школа в Нячанге",
+  "short_name": "EduCamp",
+  "description": "Российская школа и детский сад в Нячанге, Вьетнам. Образование для детей 4-12 лет",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
