@@ -60,9 +60,17 @@ export default function EducationPage() {
                                 {/* ООП НОО */}
                                 <div>
                                     <h3 className="font-semibold mb-2">Основная образовательная программа:</h3>
-                                    <DocumentLink href="https://cloud.mail.ru/public/U71C/fYkAKSqDP" itemprop="eduOp">
-                                        Основная образовательная программа НОО
-                                    </DocumentLink>
+                                    <div className="space-y-2">
+                                        <DocumentLink href="https://cloud.mail.ru/public/yucj/hjMYER3Qk" itemprop="eduOp">
+                                            Основная образовательная программа НОО
+                                        </DocumentLink>
+                                        <DocumentLink href="/documents/noo/Учебный-план-НОО.docx" itemprop="educationPlan">
+                                            Учебный план НОО
+                                        </DocumentLink>
+                                        <DocumentLink href="/documents/noo/kalendarnyj-uchebnyj-grafik-noo.pdf" itemprop="educationShedule">
+                                            Календарный учебный график НОО
+                                        </DocumentLink>
+                                    </div>
                                 </div>
 
                             </div>
@@ -95,9 +103,17 @@ export default function EducationPage() {
                                 {/* ООП ООО */}
                                 <div>
                                     <h3 className="font-semibold mb-2">Основная образовательная программа:</h3>
-                                    <DocumentLink href="https://cloud.mail.ru/public/U71C/fYkAKSqDP" itemprop="eduOp">
-                                        Основная образовательная программа ООО
-                                    </DocumentLink>
+                                    <div className="space-y-2">
+                                        <DocumentLink href="https://cloud.mail.ru/public/cPfT/FCfPap5Eu" itemprop="eduOp">
+                                            Основная образовательная программа ООО
+                                        </DocumentLink>
+                                        <DocumentLink href="/documents/ooo/Учебный-план-ООО.docx" itemprop="educationPlan">
+                                            Учебный план ООО
+                                        </DocumentLink>
+                                        <DocumentLink href="/documents/ooo/Календарный-учебный-график-ООО.docx" itemprop="educationShedule">
+                                            Календарный учебный график ООО
+                                        </DocumentLink>
+                                    </div>
                                 </div>
 
                             </div>
