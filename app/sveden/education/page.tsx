@@ -6,6 +6,35 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
 import { DocumentLink } from '@/components/ui/DocumentLink';
 import { useAccessibility } from '@/contexts/AccessibilityContext';
 
+const nooWorkPrograms = [
+    { href: '/documents/noo/английский-язык.pdf', label: 'Английский язык' },
+    { href: '/documents/noo/ИЗО.pdf', label: 'ИЗО' },
+    { href: '/documents/noo/литературное-чтение.pdf', label: 'Литературное чтение' },
+    { href: '/documents/noo/математика.pdf', label: 'Математика' },
+    { href: '/documents/noo/музыка.pdf', label: 'Музыка' },
+    { href: '/documents/noo/окружающий-мир.pdf', label: 'Окружающий мир' },
+    { href: '/documents/noo/ОРКСЭ.pdf', label: 'ОРКСЭ' },
+    { href: '/documents/noo/русский-язык.pdf', label: 'Русский язык' },
+    { href: '/documents/noo/труд.pdf', label: 'Труд' },
+    { href: '/documents/noo/Физ-кул.pdf', label: 'Физическая культура' },
+];
+
+const oooWorkPrograms = [
+    { href: '/documents/ooo/Английский-язык.pdf', label: 'Английский язык' },
+    { href: '/documents/ooo/Биология.pdf', label: 'Биология' },
+    { href: '/documents/ooo/География.pdf', label: 'География' },
+    { href: '/documents/ooo/ИЗО.pdf', label: 'ИЗО' },
+    { href: '/documents/ooo/Информатика.pdf', label: 'Информатика' },
+    { href: '/documents/ooo/История.pdf', label: 'История' },
+    { href: '/documents/ooo/Литература.pdf', label: 'Литература' },
+    { href: '/documents/ooo/Математика.pdf', label: 'Математика' },
+    { href: '/documents/ooo/Музыка.pdf', label: 'Музыка' },
+    { href: '/documents/ooo/Русский-язык.pdf', label: 'Русский язык' },
+    { href: '/documents/ooo/Труд.pdf', label: 'Труд' },
+    { href: '/documents/ooo/Физика.pdf', label: 'Физика' },
+    { href: '/documents/ooo/Физическая-культура.pdf', label: 'Физическая культура' },
+];
+
 export default function EducationPage() {
     const { colorScheme } = useAccessibility();
 
@@ -73,6 +102,17 @@ export default function EducationPage() {
                                     </div>
                                 </div>
 
+                                <div>
+                                    <h3 className="font-semibold mb-2">Рабочие программы:</h3>
+                                    <div className="space-y-2">
+                                        {nooWorkPrograms.map((program) => (
+                                            <DocumentLink key={program.href} href={program.href} itemprop="educationRpd">
+                                                {program.label}
+                                            </DocumentLink>
+                                        ))}
+                                    </div>
+                                </div>
+
                             </div>
                         </CardContent>
                     </Card>
@@ -113,6 +153,17 @@ export default function EducationPage() {
                                         <DocumentLink href="/documents/ooo/Календарный-учебный-график-ООО.docx" itemprop="educationShedule">
                                             Календарный учебный график ООО
                                         </DocumentLink>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h3 className="font-semibold mb-2">Рабочие программы:</h3>
+                                    <div className="space-y-2">
+                                        {oooWorkPrograms.map((program) => (
+                                            <DocumentLink key={program.href} href={program.href} itemprop="educationRpd">
+                                                {program.label}
+                                            </DocumentLink>
+                                        ))}
                                     </div>
                                 </div>
 
