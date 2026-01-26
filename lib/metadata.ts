@@ -23,7 +23,7 @@ export function generateSvedenMetadata(
             type: 'website',
             images: [
                 {
-                    url: `${SITE_URL}/og.jpg`,
+                    url: `${SITE_URL}/ogVOT.jpg`,
                     width: 1200,
                     height: 630,
                     alt: fullTitle,
@@ -34,7 +34,7 @@ export function generateSvedenMetadata(
             card: 'summary_large_image',
             title: fullTitle,
             description,
-            images: [`${SITE_URL}/og.jpg`],
+            images: [`${SITE_URL}/ogVOT.jpg`],
         },
         alternates: {
             canonical: url,
