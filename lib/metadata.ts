@@ -34,7 +34,7 @@ export function generateSvedenMetadata(
             card: 'summary_large_image',
             title: fullTitle,
             description,
-            images: [`${SITE_URL}/og-image.jpg`],
+            images: [`${SITE_URL}/og.jpg`],
         },
         alternates: {
             canonical: url,
