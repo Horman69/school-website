@@ -22,6 +22,8 @@ const documentsData: DocumentsInfo = {
     kolDogovor: '/documents/kol-dogovor.pdf',
 };
 
+const associationCertificateLink = '/documents/association-certificate.pdf';
+
 const documentSections = [
     { title: 'Устав образовательной организации', link: documentsData.ustav, itemprop: 'ustav', hasSignature: false },
     { title: 'Правила приема обучающихся', link: documentsData.pravPriem, itemprop: 'pravPriem', hasSignature: true },
@@ -33,6 +35,7 @@ const documentSections = [
     { title: 'Порядок и основания восстановления обучающихся', link: documentsData.pravVosst, itemprop: 'pravVosst', hasSignature: true },
     { title: 'Отчет о результатах самообследования', link: documentsData.reportEduDoc, itemprop: 'reportEduDoc', hasSignature: true },
     { title: 'Коллективный договор', link: documentsData.kolDogovor, itemprop: 'kolDogovor', hasSignature: true },
+    { title: 'Свидетельство, полученное в Ассоциации', link: associationCertificateLink, itemprop: 'associationCertificate', hasSignature: false },
 ];
 
 export default function DocumentPage() {

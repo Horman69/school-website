@@ -11,18 +11,18 @@ import { useAccessibility } from '@/contexts/AccessibilityContext';
 
 // Данные школы (будут уточнены позже)
 const schoolData: SchoolInfo = {
-    fullName: 'Образовательная организация Educamp',
-    shortName: 'Educamp',
-    regDate: 'Уточняется',
-    address: 'Вьетнам, г. Нячанг (точный адрес уточняется)',
-    telephone: 'Уточняется',
-    email: 'Уточняется',
+    fullName: 'CÔNG TY TNHH VIỆT NGA CAMP',
+    shortName: 'EduCamp',
+    regDate: '30 июля 2024 года',
+    address: 'Số 24/6 Nguyen Dinh Chieu, Phuong Bac Nha Trang, Tinh Khanh Hoa, Viet Nam',
+    telephone: '+84 901 757 633',
+    email: 'konleminh@gmail.com',
     workTime: 'Пн-Пт: 8:00-17:00 (уточняется)',
 
     uchreditel: [
         {
-            nameUchred: 'Уточняется',
-            addressUchred: 'Уточняется',
+            nameUchred: 'LE MINH CON',
+            addressUchred: 'Số 969 De La Thanh, Phuong Lang, Thanh pho Ha Noi, Viet Nam',
             telUchred: 'Уточняется',
             mailUchred: 'Уточняется',
             websiteUchred: '',

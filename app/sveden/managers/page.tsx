@@ -8,10 +8,10 @@ import type { Manager } from '@/lib/microdata/types';
 import { useAccessibility } from '@/contexts/AccessibilityContext';
 
 const director: Manager = {
-    fio: 'Сидоров Петр Иванович',
-    post: 'Директор',
-    telephone: '+7 (495) 123-45-67',
-    email: 'director@school1.ru',
+    fio: 'Ихиритова Екатерина Жамбаловна',
+    post: 'Giám đốc',
+    telephone: '+84 355 133 514',
+    email: 'travelmamatv@gmail.com',
 };
 
 const deputies: Manager[] = [

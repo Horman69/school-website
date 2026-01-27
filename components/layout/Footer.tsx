@@ -11,7 +11,7 @@ export function Footer() {
                         <h3 className="text-white font-bold mb-4">Контакты</h3>
                         <div className="space-y-2 text-sm">
                             <p>г. Нячанг, Вьетнам</p>
-                            <p>Тел: Уточняется</p>
+                            <p>Тел: +84 901 757 633</p>
                             <p>Telegram: @Educampvietnam</p>
                         </div>
                     </div>

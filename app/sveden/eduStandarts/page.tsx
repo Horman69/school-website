@@ -47,7 +47,7 @@ export default function EduStandartsPage() {
                                 <DocumentLink href="/documents/noo/prikaz-569-fgos-noo.pdf" itemprop="eduFedDoc">
                                     Приказ №569 от 18.07.2022 об изменении ФГОС НОО
                                 </DocumentLink>
-                                <DocumentLink href="https://cloud.mail.ru/public/iS67/zV4vdMxjQ" itemprop="eduFedDoc">
+                                <DocumentLink href="https://cloud.mail.ru/public/9jbL/RYFNmPJuU" itemprop="eduFedDoc">
                                     Приказ №704 от 09.10.2024 о внесении изменений в ФОП НОО, ООО, СОО
                                 </DocumentLink>
                             </div>
@@ -67,7 +67,7 @@ export default function EduStandartsPage() {
                                 <DocumentLink href="/documents/ooo/prikaz-568-fgos-ooo.pdf" itemprop="eduFedDoc">
                                     Приказ №568 от 18.07.2022 о изменении ФГОС ООО
                                 </DocumentLink>
-                                <DocumentLink href="https://cloud.mail.ru/public/iS67/zV4vdMxjQ" itemprop="eduFedDoc">
+                                <DocumentLink href="https://cloud.mail.ru/public/9jbL/RYFNmPJuU" itemprop="eduFedDoc">
                                     Приказ №704 от 09.10.2024 о внесении изменений в ФОП НОО, ООО, СОО
                                 </DocumentLink>
                             </div>

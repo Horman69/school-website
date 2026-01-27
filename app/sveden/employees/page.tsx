@@ -249,7 +249,7 @@ export default function EmployeesPage() {
 
                     <Card>
                         <CardHeader>
-                            <CardTitle>Педагогический состав образовательной организации Educamp</CardTitle>
+                            <CardTitle>Педагогический состав образовательной организации CÔNG TY TNHH VIỆT NGA CAMP (EduCamp)</CardTitle>
                         </CardHeader>
                         <CardContent>
                             <div className="overflow-x-auto">
