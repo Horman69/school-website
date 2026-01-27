@@ -7,24 +7,7 @@ import { MicrodataTable } from '@/components/microdata/MicrodataTable';
 import type { StructOrgUprav } from '@/lib/microdata/types';
 import { useAccessibility } from '@/contexts/AccessibilityContext';
 
-const structureData: StructOrgUprav[] = [
-    {
-        name: 'Начальная школа',
-        fio: 'Иванова Мария Петровна',
-        post: 'Заведующий начальной школой',
-        addressStr: 'г. Москва, ул. Ленина, д. 1, корпус 1',
-        email: 'nachalnaya@school1.ru',
-        divisionClauseDocLink: '/documents/polojenie-nachalnaya.pdf',
-    },
-    {
-        name: 'Средняя и старшая школа',
-        fio: 'Петров Иван Сергеевич',
-        post: 'Заведующий средней и старшей школой',
-        addressStr: 'г. Москва, ул. Ленина, д. 1, корпус 2',
-        email: 'srednyaya@school1.ru',
-        divisionClauseDocLink: '/documents/polojenie-srednyaya.pdf',
-    },
-];
+const structureData: StructOrgUprav[] = [];
 
 export default function StructPage() {
     const { colorScheme } = useAccessibility();

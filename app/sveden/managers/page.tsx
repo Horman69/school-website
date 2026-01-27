@@ -14,20 +14,7 @@ const director: Manager = {
     email: 'travelmamatv@gmail.com',
 };
 
-const deputies: Manager[] = [
-    {
-        fio: 'Иванова Мария Петровна',
-        post: 'Заместитель директора по учебной работе',
-        telephone: '+7 (495) 123-45-68',
-        email: 'zavuch@school1.ru',
-    },
-    {
-        fio: 'Петрова Анна Сергеевна',
-        post: 'Заместитель директора по воспитательной работе',
-        telephone: '+7 (495) 123-45-69',
-        email: 'vospitanie@school1.ru',
-    },
-];
+
 
 export default function ManagersPage() {
     const { colorScheme } = useAccessibility();
@@ -75,23 +62,7 @@ export default function ManagersPage() {
                         </CardContent>
                     </Card>
 
-                    <Card>
-                        <CardHeader>
-                            <CardTitle>Заместители руководителя</CardTitle>
-                        </CardHeader>
-                        <CardContent>
-                            <MicrodataTable
-                                data={deputies}
-                                parentItemprop="rucovodstvoZam"
-                                columns={[
-                                    { header: 'ФИО', accessor: 'fio', itemprop: 'fio' },
-                                    { header: 'Должность', accessor: 'post', itemprop: 'post' },
-                                    { header: 'Телефон', accessor: 'telephone', itemprop: 'telephone' },
-                                    { header: 'Email', accessor: 'email', itemprop: 'email' },
-                                ]}
-                            />
-                        </CardContent>
-                    </Card>
+
                 </div>
             </PageContainer>
         </div>
