@@ -147,7 +147,7 @@ export default function EducationPage() {
                                         <DocumentLink href="https://cloud.mail.ru/public/9jbL/RYFNmPJuU" itemprop="eduOp">
                                             Основная образовательная программа ООО
                                         </DocumentLink>
-                                        <DocumentLink href="/documents/ooo/Учебный-план-ООО.docx" itemprop="educationPlan">
+                                        <DocumentLink href="/documents/ooo/Учебный-план-ООО.pdf" itemprop="educationPlan">
                                             Учебный план ООО
                                         </DocumentLink>
                                         <DocumentLink href="/documents/ooo/Календарный-учебный-график-ООО.docx" itemprop="educationShedule">
