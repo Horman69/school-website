@@ -93,7 +93,7 @@ export default function EducationPage() {
                                         <DocumentLink href="https://cloud.mail.ru/public/jebR/RucCzpqtx" itemprop="eduOp">
                                             Основная образовательная программа НОО
                                         </DocumentLink>
-                                        <DocumentLink href="/documents/noo/Учебный-план-НОО.pdf" itemprop="educationPlan">
+                                        <DocumentLink href="/documents/noo/Учебный план НОО.pdf" itemprop="educationPlan">
                                             Учебный план НОО
                                         </DocumentLink>
                                         <DocumentLink href="/documents/noo/kalendarnyj-uchebnyj-grafik-noo.pdf" itemprop="educationShedule">
@@ -147,7 +147,7 @@ export default function EducationPage() {
                                         <DocumentLink href="https://cloud.mail.ru/public/9jbL/RYFNmPJuU" itemprop="eduOp">
                                             Основная образовательная программа ООО
                                         </DocumentLink>
-                                        <DocumentLink href="/documents/ooo/Учебный-план-ООО.pdf" itemprop="educationPlan">
+                                        <DocumentLink href="/documents/ooo/Учебный план ООО.pdf" itemprop="educationPlan">
                                             Учебный план ООО
                                         </DocumentLink>
                                         <DocumentLink href="/documents/ooo/Календарный-учебный-график-ООО.docx" itemprop="educationShedule">
