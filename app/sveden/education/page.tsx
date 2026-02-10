@@ -93,7 +93,7 @@ export default function EducationPage() {
                                         <DocumentLink href="https://cloud.mail.ru/public/jebR/RucCzpqtx" itemprop="eduOp">
                                             Основная образовательная программа НОО
                                         </DocumentLink>
-                                        <DocumentLink href="/documents/noo/Учебный-план-НОО.docx" itemprop="educationPlan">
+                                        <DocumentLink href="/documents/noo/Учебный-план-НОО.pdf" itemprop="educationPlan">
                                             Учебный план НОО
                                         </DocumentLink>
                                         <DocumentLink href="/documents/noo/kalendarnyj-uchebnyj-grafik-noo.pdf" itemprop="educationShedule">
@@ -178,6 +178,18 @@ export default function EducationPage() {
                         </CardHeader>
                         <CardContent>
                             <p itemProp="language" className="font-medium">Русский язык</p>
+                        </CardContent>
+                    </Card>
+
+                    {/* Положение о ЭИОС */}
+                    <Card>
+                        <CardHeader>
+                            <CardTitle>Дополнительные документы</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <DocumentLink href="/documents/noo/Положение-о-ЭИОС.pdf">
+                                Положение об электронной информационно-образовательной среде
+                            </DocumentLink>
                         </CardContent>
                     </Card>
                 </div>
