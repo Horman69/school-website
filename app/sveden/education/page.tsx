@@ -20,19 +20,25 @@ const nooWorkPrograms = [
 ];
 
 const oooWorkPrograms = [
+    { href: '/documents/ooo/Алгебра.pdf', label: 'Алгебра' },
     { href: '/documents/ooo/Английский-язык.pdf', label: 'Английский язык' },
     { href: '/documents/ooo/Биология.pdf', label: 'Биология' },
+    { href: '/documents/ooo/Вероятность-и-статистика.pdf', label: 'Вероятность и статистика' },
     { href: '/documents/ooo/География.pdf', label: 'География' },
+    { href: '/documents/ooo/Геометрия.pdf', label: 'Геометрия' },
     { href: '/documents/ooo/ИЗО.pdf', label: 'ИЗО' },
     { href: '/documents/ooo/Информатика.pdf', label: 'Информатика' },
     { href: '/documents/ooo/История.pdf', label: 'История' },
     { href: '/documents/ooo/Литература.pdf', label: 'Литература' },
     { href: '/documents/ooo/Математика.pdf', label: 'Математика' },
     { href: '/documents/ooo/Музыка.pdf', label: 'Музыка' },
+    { href: '/documents/ooo/ОБЗР.pdf', label: 'ОБЗР' },
+    { href: '/documents/ooo/Обществознание.pdf', label: 'Обществознание' },
     { href: '/documents/ooo/Русский-язык.pdf', label: 'Русский язык' },
     { href: '/documents/ooo/Труд.pdf', label: 'Труд' },
     { href: '/documents/ooo/Физика.pdf', label: 'Физика' },
     { href: '/documents/ooo/Физическая-культура.pdf', label: 'Физическая культура' },
+    { href: '/documents/ooo/Химия.pdf', label: 'Химия' },
 ];
 
 export default function EducationPage() {
