@@ -150,11 +150,11 @@ export default function EducationPage() {
                                 <div>
                                     <h3 className="font-semibold mb-2">Основная образовательная программа:</h3>
                                     <div className="space-y-2">
-                                        <DocumentLink href="https://cloud.mail.ru/public/9jbL/RYFNmPJuU" itemprop="eduOp">
+                                        <DocumentLink href="https://cloud.mail.ru/public/Dp1M/o5ih9e11T" itemprop="eduOp">
                                             Основная образовательная программа ООО
                                         </DocumentLink>
-                                        <DocumentLink href="/documents/ooo/Учебный план ООО.pdf" itemprop="educationPlan">
-                                            Учебный план ООО
+                                        <DocumentLink href="/documents/ooo/Учебный план 5-9 класс.pdf" itemprop="educationPlan">
+                                            Учебный план ООО (5-9 класс)
                                         </DocumentLink>
                                         <DocumentLink href="/documents/ooo/Календарный-учебный-график-ООО.docx" itemprop="educationShedule">
                                             Календарный учебный график ООО
@@ -170,6 +170,27 @@ export default function EducationPage() {
                                                 {program.label}
                                             </DocumentLink>
                                         ))}
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h3 className="font-semibold mb-2">Программы части, формируемой участниками образовательных отношений (ЧФУ):</h3>
+                                    <div className="space-y-2">
+                                        <DocumentLink href="/documents/ooo/Программа ЧФУ 5-8 класс.pdf" itemprop="educationRpd">
+                                            Программа ЧФУ 5-8 класс
+                                        </DocumentLink>
+                                        <DocumentLink href="/documents/ooo/Программа ЧФУ 5-9 класс.pdf" itemprop="educationRpd">
+                                            Программа ЧФУ 5-9 класс
+                                        </DocumentLink>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h3 className="font-semibold mb-2">Программы внеурочной деятельности:</h3>
+                                    <div className="space-y-2">
+                                        <DocumentLink href="/documents/ooo/Программы внеурочной деятельности 5-9 кл.pdf" itemprop="educationRpd">
+                                            Программы внеурочной деятельности 5-9 класс
+                                        </DocumentLink>
                                     </div>
                                 </div>
 
