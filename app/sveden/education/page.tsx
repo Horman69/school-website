@@ -150,7 +150,7 @@ export default function EducationPage() {
                                 <div>
                                     <h3 className="font-semibold mb-2">Основная образовательная программа:</h3>
                                     <div className="space-y-2">
-                                        <DocumentLink href="https://cloud.mail.ru/public/Dp1M/o5ih9e11T" itemprop="eduOp">
+                                        <DocumentLink href="https://cloud.mail.ru/public/wJc2/1VSuHuTYi" itemprop="eduOp">
                                             Основная образовательная программа ООО
                                         </DocumentLink>
                                         <DocumentLink href="/documents/ooo/Учебный план 5-9 класс.pdf" itemprop="educationPlan">
