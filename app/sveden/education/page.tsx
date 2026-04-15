@@ -235,6 +235,12 @@ export default function EducationPage() {
                             <DocumentLink href="/documents/noo/Положение-о-ЭИОС.pdf">
                                 Положение об электронной информационно-образовательной среде
                             </DocumentLink>
+                            <DocumentLink href="/documents/Образовательные ресурсы сети Интернет.pdf">
+                                Образовательные ресурсы сети Интернет
+                            </DocumentLink>
+                            <DocumentLink href="/documents/ЭОР для начальной школы.pdf">
+                                ЭОР для начальной школы
+                            </DocumentLink>
                         </CardContent>
                     </Card>
                 </div>
