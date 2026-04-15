@@ -128,6 +128,15 @@ export default function EducationPage() {
                                     </div>
                                 </div>
 
+                                <div>
+                                    <h3 className="font-semibold mb-2">Программы внеурочной деятельности:</h3>
+                                    <div className="space-y-2">
+                                        <DocumentLink href="/documents/noo/Внеурочная деятельность.pdf" itemprop="educationRpd">
+                                            Программы внеурочной деятельности НОО (1-4 класс)
+                                        </DocumentLink>
+                                    </div>
+                                </div>
+
                             </div>
                         </CardContent>
                     </Card>
