@@ -23,7 +23,7 @@ const schoolData: SchoolInfo = {
         {
             nameUchred: 'LE MINH CON',
             addressUchred: 'Số 969 De La Thanh, Phuong Lang, Thanh pho Ha Noi, Viet Nam',
-            telUchred: 'Уточняется',
+            telUchred: '+84 358 127 968',
             mailUchred: 'Уточняется',
             websiteUchred: '',
         },

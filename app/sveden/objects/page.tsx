@@ -3,6 +3,7 @@
 import { PageContainer } from '@/components/layout/PageContainer';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
+import { DocumentLink } from '@/components/ui/DocumentLink';
 import { useAccessibility } from '@/contexts/AccessibilityContext';
 
 export default function ObjectsPage() {
@@ -90,13 +91,21 @@ export default function ObjectsPage() {
 
                     <Card>
                         <CardHeader>
-                            <CardTitle>Доступ к информационным системам</CardTitle>
+                            <CardTitle>Сведения о доступе к информационным системам и информационно-телекоммуникационным сетям</CardTitle>
                         </CardHeader>
                         <CardContent>
                             <p itemProp="comNet" className={`mb-4 leading-relaxed ${getTextClasses()}`}>
                                 Все учебные кабинеты оборудованы компьютерами с доступом к сети Интернет.
                                 Скорость подключения: 100 Мбит/с.
                             </p>
+
+                            <div className="mt-4 mb-4">
+                                <h3 className={`font-semibold mb-2 ${getLabelClasses()}`}>Договор на предоставление услуг доступа к сети Интернет:</h3>
+                                <DocumentLink href="/documents/1.pdf" itemprop="comNet">
+                                    Договор с интернет-провайдером
+                                </DocumentLink>
+                            </div>
+
                             <p itemProp="comNetOvz" className={`leading-relaxed ${getTextClasses()}`}>
                                 Доступ к информационным системам приспособлен для использования инвалидами и лицами с ОВЗ.
                             </p>
