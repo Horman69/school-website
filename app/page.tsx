@@ -213,7 +213,7 @@ export default function Home() {
                 Российское образование во Вьетнаме
               </p>
               <p className="text-lg md:text-xl lg:text-2xl mb-12 font-light opacity-90">
-                Школа и детский сад для детей от 4 до 12 лет
+                Школа и детский сад для детей от 4 до 15 лет
               </p>
 
               {/* Contact Info Cards */}
@@ -235,7 +235,7 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
                   </div>
-                  <span className="font-medium">+84 901 757 633</span>
+                  <span className="font-medium">+84 382 664 167</span>
                 </div>
 
                 <div className="group flex items-center gap-3 bg-white/10 backdrop-blur-md px-6 py-4 rounded-xl border border-white/20 hover:bg-white/15 transition-all duration-300 shadow-lg hover:shadow-xl">
