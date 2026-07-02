@@ -213,7 +213,7 @@ export default function Home() {
                 Российское образование во Вьетнаме
               </p>
               <p className="text-lg md:text-xl lg:text-2xl mb-12 font-light opacity-90">
-                Школа и детский сад для детей от 4 до 15 лет
+                Детский сад и школа с 1 по 9 класс
               </p>
 
               {/* Contact Info Cards */}
