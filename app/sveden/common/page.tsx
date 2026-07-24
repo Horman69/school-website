@@ -19,15 +19,7 @@ const schoolData: SchoolInfo = {
     email: 'konleminh@gmail.com',
     workTime: 'Пн-Пт: 8:00-17:00 (уточняется)',
 
-    uchreditel: [
-        {
-            nameUchred: 'LE MINH CON',
-            addressUchred: 'Số 969 De La Thanh, Phuong Lang, Thanh pho Ha Noi, Viet Nam',
-            telUchred: '+84 358 127 968',
-            mailUchred: 'Уточняется',
-            websiteUchred: '',
-        },
-    ],
+    uchreditel: [], // Учредители временно скрыты
 
     licenseDocLink: '',
     accreditationDocLink: '',
@@ -87,7 +79,8 @@ export default function CommonPage() {
                         </CardContent>
                     </Card>
 
-                    {/* Учредители */}
+                    {/* Учредители (временно скрыты) */}
+                    {/*
                     <Card className="mb-6">
                         <CardHeader>
                             <CardTitle>Учредители</CardTitle>
@@ -106,6 +99,7 @@ export default function CommonPage() {
                             />
                         </CardContent>
                     </Card>
+                    */}
 
                     {/* Документы */}
                     <Card>
