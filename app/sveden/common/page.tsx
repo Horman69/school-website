@@ -16,7 +16,7 @@ const schoolData: SchoolInfo = {
     regDate: '30 июля 2024 года',
     address: 'Số 24/6 Nguyen Dinh Chieu, Phuong Bac Nha Trang, Tinh Khanh Hoa, Viet Nam',
     telephone: '+84 382 664 167',
-    email: 'konleminh@gmail.com',
+    email: 'EduCamp.staff@gmail.com',
     workTime: 'Пн-Пт: 8:00-17:00 (уточняется)',
 
     uchreditel: [], // Учредители временно скрыты
